@@ -206,7 +206,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline7" />
 
-    <TableLayout
+    <LinearLayout
         android:id="@+id/score_tab"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -216,8 +216,159 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:weightSum="4.06">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1nametab"
+                android:text="P1 NAme"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1scoretab"
+                android:text="P1 Score"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight=".02"
+            android:background="#939393"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2nametab"
+                android:text="P1 NAme"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2scoretab"
+                android:text="P1 Score"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight=".02"
+            android:background="#939393"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3nametab"
+                android:text="P1 NAme"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3scoretab"
+                android:text="P1 Score"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight=".02"
+            android:background="#939393"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4nametab"
+                android:text="P1 NAme"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4scoretab"
+                android:text="P1 Score"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="#2c89ed"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
